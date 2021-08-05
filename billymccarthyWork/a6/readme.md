@@ -1,0 +1,13 @@
+#Billy McCarthy Simulation
+
+#In this simulation I showed teams, and how each can sway another to join them. Here loyalty is nothing, and when the simulation commences, it takes into account how many neighbors you have. red and light blue are direct opposites. This matters in further simulations I will be getting into.
+
+#in broken I attempted two colors, neutral(grey) and a light blue. Here I have a check to see if there are two neighbors, and if there are, you switch to said color. Due to neutral being 0, and checked first, if there are two neutral colors, the square will always switch to that color. This causes everyone to go neutral.
+
+#in continuous, I attempted the exact same thing as broken, but added 5 more colors. This one is the exact same, but it checks all colors instead of just two.  (tidbit)I also created this with seven colors but only three could sway, the exact same as broken in code and checks, and it came out with something interesting, just straight to neutral basically but first everything went light blue that wasn't neutral.
+
+#in correct I tried to make averages. Here the player is first swayed by red or blue, and I always skip neutral, as you cant exactly sway someone if you stand for nothing often. as red is max, if youre next to a max square, youre swayed. If youre next to a blue, youre also swayed. if neither of these two are neighbors, the average of everyone around you is taken, and that becomes your color. The interesting aspect of this, is that even though red is checked first, it always goes blue. Also red and blue stay the longest in this one, as they are more likely to be polarizing. One interesting point on the polarizing, is to get a neighbor to switch, random numbers do come into play for these, with a 40% chance of a switch. After this, I also check neighbors, to see if they are a different color, and if there are two or more, the square switches to that. slowly but surely everything becomes neutral.
+
+#in emoji I focused on the neighbors more. Here I check to see how many neighbors you have. if theres 3 of a color, you have an 80% chance to switch to that. If there isn't three, theres a 60% chance you switch to the ones you have two of. If theres one, there is a 40% percent chance you'll switch to it. otherwise you switch to neutral.
+
+# I think this does show it well, but it does not take into account the team you are already on, nor how effective a team is, which at recruiting. I attempted to recreate this with randomization, but due to how the loops work, they will always check neutral first, so everyone is more likely to become neutral, shown by just running every simulation.
